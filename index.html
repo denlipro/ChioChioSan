@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Chio-Chio-san</title>
+        </head>
+    <body>
+        <div class="overlay">
+            <div class="overlay-block">
+                <div class="close-btn" onclick="closeCall()"><i class="fas fa-times"></i></div>
+                <div class="overlay-ttl">Заказать обратный звонок</div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введите имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Ваш телефон:</label>
+                        <input type="email" class="form-control" id="phone" placeholder="Введите телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea name="" id="message" class="form-control" placeholder="Введите сообщение" required></textarea>
+                    </div>
+                    <div class="overlay-btn">
+                        <button type="submit" class="buy-btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right-menu">
+            <div class="right-menu-block cart"><i class="fas fa-shopping-cart"></i></div>
+            <div class="right-menu-block favorite"><i class="fas fa-heart"></i></div>
+            <div class="right-menu-block profile"><i class="fas fa-user"></i></div>
+            <div class="right-menu-block search">
+                <i class="fas fa-search"></i>
+                <div class="search-block">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="header">
+                            <div class="row ">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+                                    <div class="langs">
+                                        <a href="">ru</a>
+                                        <a href="">ua</a>
+                                        <a href="">en</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-12 col-md-6 col-lg-8 col-xl-8 phones-block">
+                                    <div class="phones">
+                                        <div class="phone-numbers">
+                                            <select name="" id="">
+                                                <option value="">88005553535</option>
+                                                <option value="">88005553535</option>
+                                                <option value="">88005553535</option>
+                                            </select>
+                                        </div>
+                                        <div class="callme" id="call" onclick="openCall()">Заказать обратный звонок</div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+                                    <div class="socials">
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-vk"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="logo-block">
+                        <img src="img/logo.png" alt="Logo">
+                    </div>
+                    <div class="clouds">
+                        <div class="cloud-1"></div>
+                        <div class="cloud-2"></div>
+                        <div class="cloud-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu">
+                        <nav class="navbar navbar-expand-lg navbar-light" >
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="mob-cart"><img src="img/cart.svg" alt=""></div>
+                            <div class="mob-lk"><img src="img/user.svg" alt=""></div>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Суши и роллы <span class="sr-only">(current)</span></a>
+                                    </li> <div class="hr"></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Нигири <span class="sr-only">(current)</span></a>
+                                    </li> <div class="hr"></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Гунканы <span class="sr-only">(current)</span></a>
+                                    </li> <div class="hr"></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Сушими <span class="sr-only">(current)</span></a>
+                                    </li> <div class="hr"></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Салаты и закуски <span class="sr-only">(current)</span></a>
+                                    </li> <div class="hr"></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Лапша <span class="sr-only">(current)</span></a>
+                                    </li> <div class="hr"></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Напитки <span class="sr-only">(current)</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="slider">
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/slide1.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <a href=""><img class="d-block w-100" src="img/slide1.png" alt="Second slide"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <div class="content-ttl-block">
+                            <div class="ttl-block">Рекомендуем</div>
+                        </div>
+                        <div class="products">
+                            <div class="row ">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-block">
+                                        <div class="product-img"><img src="img/product-img.png" alt=""></div>
+                                        <div class="product-ttl">ролл филадельфия</div>
+                                        <div class="product-weight">210 гр</div>
+                                        <div class="product-price">5,33 <span>M</span></div>
+                                        <a href=""><div class="buy-btn"><i class="fas fa-shopping-cart"></i>Купить</div></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-block">
+                                        <div class="product-img"><img src="img/product-img.png" alt=""></div>
+                                        <div class="product-ttl">ролл филадельфия</div>
+                                        <div class="product-weight">210 гр</div>
+                                        <div class="product-price">5,33 <span>M</span></div>
+                                        <a href=""><div class="buy-btn"><i class="fas fa-shopping-cart"></i>Купить</div></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-block">
+                                        <div class="product-img"><img src="img/product-img.png" alt=""></div>
+                                        <div class="product-ttl">ролл филадельфия</div>
+                                        <div class="product-weight">210 гр</div>
+                                        <div class="product-price">5,33 <span>M</span></div>
+                                        <a href=""><div class="buy-btn"><i class="fas fa-shopping-cart"></i>Купить</div></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-block">
+                                        <div class="product-img"><img src="img/product-img.png" alt=""></div>
+                                        <div class="product-ttl">ролл филадельфия</div>
+                                        <div class="product-weight">210 гр</div>
+                                        <div class="product-price">5,33 <span>M</span></div>
+                                        <a href=""><div class="buy-btn"><i class="fas fa-shopping-cart"></i>Купить</div></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-block">
+                                        <div class="product-img"><img src="img/product-img.png" alt=""></div>
+                                        <div class="product-ttl">ролл филадельфия</div>
+                                        <div class="product-weight">210 гр</div>
+                                        <div class="product-price">5,33 <span>M</span></div>
+                                        <a href=""><div class="buy-btn"><i class="fas fa-shopping-cart"></i>Купить</div></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-block">
+                                        <div class="product-img"><img src="img/product-img.png" alt=""></div>
+                                        <div class="product-ttl">ролл филадельфия</div>
+                                        <div class="product-weight">210 гр</div>
+                                        <div class="product-price">5,33 <span>M</span></div>
+                                        <a href=""><div class="buy-btn"><i class="fas fa-shopping-cart"></i>Купить</div></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-block">
+                                        <div class="product-img"><img src="img/product-img.png" alt=""></div>
+                                        <div class="product-ttl">ролл филадельфия</div>
+                                        <div class="product-weight">210 гр</div>
+                                        <div class="product-price">5,33 <span>M</span></div>
+                                        <a href=""><div class="buy-btn"><i class="fas fa-shopping-cart"></i>Купить</div></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                    <div class="product-block">
+                                        <div class="product-img"><img src="img/product-img.png" alt=""></div>
+                                        <div class="product-ttl">ролл филадельфия</div>
+                                        <div class="product-weight">210 гр</div>
+                                        <div class="product-price">5,33 <span>M</span></div>
+                                        <a href=""><div class="buy-btn"><i class="fas fa-shopping-cart"></i>Купить</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="red-line"></div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="footer">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                <div class="footer__menu__ttl">Информация</div>
+                                <div class="footer__menu__item">
+                                    <ul>
+                                        <a href=""><li>О нас</li></a>
+                                        <a href=""><li>Доставка</li></a>
+                                        <a href=""><li>Политика конфиденциальности</li></a>
+                                        <a href=""><li>Правила и условия</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                <div class="footer__menu__ttl">Служба поддержки</div>
+                                <div class="footer__menu__item">
+                                    <ul>
+                                        <a href=""><li>Связаться с нами</li></a>
+                                        <a href=""><li>Возврат товара</li></a>
+                                        <a href=""><li>Карта сайта</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                                <div class="footer__menu__ttl">Дополнительно</div>
+                                <div class="footer__menu__item">
+                                    <ul>
+                                        <a href=""><li>Производители (бренды)</li></a>
+                                        <a href=""><li>Подарочные сертификаты</li></a>
+                                        <a href=""><li>Партнёрская программа</li></a>
+                                        <a href=""><li>Акции</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 right-footer-menu">
+                                <div class="footer__menu__ttl">Личный кабинет</div>
+                                <div class="footer__menu__item">
+                                    <ul>
+                                        <a href=""><li>Личный кабинет</li></a>
+                                        <a href=""><li>История заказов</li></a>
+                                        <a href=""><li>Закладки</li></a>
+                                        <a href=""><li>Рассылки</li></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <div class="app">
+                                    <a href="">
+                                        <div class="app-btn">
+                                            <div class="store-icon"><i class="fab fa-google-play"></i></div>
+                                            <div class="store-text">Download it from GOOGLE PLAY</div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="app-btn ">
+                                            <div class="store-icon"><i class="fab fa-apple"></i></div>
+                                            <div class="store-text">Download it from APP STORE</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-end">© 2000-2016 CHIO CHIO SAN</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
